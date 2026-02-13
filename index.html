@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>From your lover boy?</title>
+  <title>From the lover boy</title>
 
   <!-- Confetti library -->
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
@@ -171,7 +171,7 @@
             fill="#ff7aa2"/>
     </svg>
 
-    <h1>bami will you be my Valentine… or do I have to convince you again? 😉?</h1>
+    <h1>Bami will you be my Valentine or do I have to convince you again? 😉?</h1>
 <img
   src="./front.jpg"
   alt="Bami"
@@ -318,5 +318,20 @@
       fullScreenConfetti();
     });
   </script>
+   <script>
+  const noBtn = document.getElementById("noBtn");
+
+  noBtn.addEventListener("mouseenter", () => {
+    const maxX = window.innerWidth - noBtn.offsetWidth;
+    const maxY = window.innerHeight - noBtn.offsetHeight;
+
+    const x = Math.random() * maxX;
+    const y = Math.random() * maxY;
+
+    noBtn.style.left = `${x}px`;
+    noBtn.style.top = `${y}px`;
+  });
+</script>
+     
 </body>
 </html>
